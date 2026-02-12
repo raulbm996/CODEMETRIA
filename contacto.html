@@ -123,7 +123,11 @@
                     <p style="color: var(--text-muted); font-size: var(--fs-sm); margin-bottom: var(--space-xl);">
                         Rellena el formulario y te contactaremos lo antes posible.</p>
 
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formsubmit.co/info.codemetria@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde CODEMETRIA Web">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://raulbm996.github.io/CODEMETRIA/contacto.html">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Nombre *</label>

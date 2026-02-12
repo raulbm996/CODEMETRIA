@@ -147,25 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
             const btn = contactForm.querySelector('.btn-submit');
-            const originalText = btn.innerHTML;
-
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             btn.disabled = true;
-
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fas fa-check"></i> ¡Enviado con éxito!';
-                btn.style.background = 'linear-gradient(135deg, #00c853, #00e676)';
-
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                    contactForm.reset();
-                }, 2500);
-            }, 1500);
         });
     }
 
