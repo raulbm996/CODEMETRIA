@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contacta con CODEMETRIA para tu proyecto web. Solicita presupuesto sin compromiso.">
+    <title>Contacto | CODEMETRIA - Solicita tu Presupuesto</title>
+    <link rel="icon" type="image/png" href="ChatGPT Image 12 feb 2026, 15_31_36.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header scrolled">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="ChatGPT Image 12 feb 2026, 15_31_36.png" alt="CODEMETRIA Logo" class="logo-img">
+                    <span class="logo-text">CODEMETRIA</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                <a href="contacto.html" class="btn btn-primary nav-cta">Empezar Proyecto</a>
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Contacto</span>
+            </div>
+            <h1>Hablemos de tu <span class="gradient-text">Proyecto</span></h1>
+            <p>Cuéntanos tu idea y te responderemos en menos de 24 horas con una propuesta personalizada.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid" data-animate>
+
+                <!-- Info de Contacto -->
+                <div class="contact-info-card">
+                    <h3 style="margin-bottom: var(--space-xl);">Información de Contacto</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info.codemetria@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+34 671 851 592</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Sevilla, España</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Máxima disponibilidad para el cliente</p>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div style="margin-top: var(--space-xl);">
+                        <h4 style="margin-bottom: var(--space-md);">Síguenos</h4>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/codemetria/" target="_blank" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="contact-form-card">
+                    <h3>Solicitar Presupuesto</h3>
+                    <p style="color: var(--text-muted); font-size: var(--fs-sm); margin-bottom: var(--space-xl);">
+                        Rellena el formulario y te contactaremos lo antes posible.</p>
+
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre *</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+34 671 851 592">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Servicio</label>
+                                <select id="service" name="service">
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="diseno">Diseño Web</option>
+                                    <option value="desarrollo">Desarrollo Web</option>
+                                    <option value="responsive">Diseño Responsive</option>
+                                    <option value="ecommerce">E-Commerce</option>
+                                    <option value="mantenimiento">Mantenimiento</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Cuéntanos tu proyecto *</label>
+                            <textarea id="message" name="message"
+                                placeholder="Describe tu proyecto, objetivos y necesidades..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-submit"
+                            style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Preguntas <span class="gradient-text">Frecuentes</span></h2>
+            </div>
+            <div style="max-width: 700px; margin: 0 auto;" data-animate>
+
+                <div class="process-step" style="margin-bottom: var(--space-lg);">
+                    <div class="step-content">
+                        <h3>¿Cuánto cuesta una página web?</h3>
+                        <p>Ofrecemos precios muy competitivos adaptados a cada proyecto. Nuestro objetivo es que tengas
+                            una web profesional sin que suponga un gran esfuerzo económico. Solicita un presupuesto sin
+                            compromiso y te sorprenderá.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" style="margin-bottom: var(--space-lg);">
+                    <div class="step-content">
+                        <h3>¿Cuánto tiempo tarda en estar lista mi web?</h3>
+                        <p>Trabajamos con plazos de entrega muy ágiles. La mayoría de proyectos los entregamos en pocos
+                            días, y los más complejos en pocas semanas. Nos comprometemos a que tengas tu web lista lo
+                            antes posible.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" style="margin-bottom: var(--space-lg);">
+                    <div class="step-content">
+                        <h3>¿Incluís hosting y dominio?</h3>
+                        <p>Sí, en todos nuestros planes incluimos el primer año de hosting y dominio. Después, te
+                            asistimos en la renovación con las mejores condiciones.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" style="margin-bottom: var(--space-lg);">
+                    <div class="step-content">
+                        <h3>¿Puedo modificar la web después?</h3>
+                        <p>Por supuesto. Todas nuestras webs incluyen un CMS o panel de administración para que puedas
+                            gestionar tu contenido de forma autónoma. Además, ofrecemos planes de mantenimiento.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-content">
+                        <h3>¿Ofrecéis soporte técnico?</h3>
+                        <p>Sí. Todos los proyectos incluyen un período de soporte gratuito (varía según el plan).
+                            Después puedes contratar nuestro servicio de mantenimiento mensual.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="ChatGPT Image 12 feb 2026, 15_31_36.png" alt="CODEMETRIA" class="logo-img">
+                        <span class="logo-text">CODEMETRIA</span>
+                    </a>
+                    <p>Agencia de diseño y desarrollo web profesional. Transformamos ideas en experiencias digitales
+                        excepcionales.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/codemetria/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html">Diseño Web</a></li>
+                        <li><a href="servicios.html">Desarrollo Web</a></li>
+                        <li><a href="servicios.html">E-Commerce</a></li>
+                        <li><a href="servicios.html">Mantenimiento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info.codemetria@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +34 671 851 592</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Sevilla, España</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

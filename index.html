@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CODEMETRIA - Agencia de diseño web profesional. Creamos páginas web modernas, funcionales y a medida para impulsar tu negocio.">
+    <meta name="keywords" content="diseño web, desarrollo web, páginas web, agencia digital, CODEMETRIA">
+    <title>CODEMETRIA | Agencia de Diseño Web Profesional</title>
+    <link rel="icon" type="image/png" href="ChatGPT Image 12 feb 2026, 15_31_36.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <img src="ChatGPT Image 12 feb 2026, 15_31_36.png" alt="CODEMETRIA" class="loader-logo">
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navegación -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="ChatGPT Image 12 feb 2026, 15_31_36.png" alt="CODEMETRIA Logo" class="logo-img">
+                    <span class="logo-text">CODEMETRIA</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <a href="contacto.html" class="btn btn-primary nav-cta">Empezar Proyecto</a>
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <i class="fas fa-rocket"></i> Agencia de Diseño Web
+                </span>
+                <h1 class="hero-title">
+                    Diseñamos experiencias<br>
+                    <span class="gradient-text">digitales que impactan</span>
+                </h1>
+                <p class="hero-description">
+                    Transformamos tu visión en páginas web modernas, funcionales y optimizadas
+                    que impulsan tu negocio al siguiente nivel.
+                </p>
+                <div class="hero-buttons">
+                    <a href="contacto.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane"></i> Solicitar Presupuesto
+                    </a>
+                    <a href="proyectos.html" class="btn btn-outline btn-lg">
+                        <i class="fas fa-eye"></i> Ver Proyectos
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Proyectos Completados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="40">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services-preview"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Servicios Preview -->
+    <section class="section services-preview" id="services-preview">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">Soluciones digitales <span class="gradient-text">a medida</span></h2>
+                <p class="section-description">Ofrecemos un servicio integral de diseño y desarrollo web adaptado a las
+                    necesidades de cada cliente.</p>
+            </div>
+            <div class="services-grid" data-animate>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Diseño Web</h3>
+                    <p>Interfaces modernas y atractivas que reflejan la identidad de tu marca y cautivan a tus usuarios.
+                    </p>
+                    <a href="servicios.html" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Código limpio y optimizado con las últimas tecnologías para un rendimiento excepcional.</p>
+                    <a href="servicios.html" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Diseño Responsive</h3>
+                    <p>Tu web se verá perfecta en cualquier dispositivo: móvil, tablet o escritorio.</p>
+                    <a href="servicios.html" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>E-Commerce</h3>
+                    <p>Tiendas online completas y seguras que maximizan tus ventas y facilitan la gestión.</p>
+                    <a href="servicios.html" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Mantenimiento</h3>
+                    <p>Soporte continuo y actualizaciones para que tu sitio web esté siempre al día y funcionando.</p>
+                    <a href="servicios.html" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="section-cta" data-animate>
+                <a href="servicios.html" class="btn btn-outline">Ver todos los servicios <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Preview -->
+    <section class="section projects-preview" id="projects-preview">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Proyectos <span class="gradient-text">destacados</span></h2>
+                <p class="section-description">Una selección de nuestros trabajos más recientes y exitosos.</p>
+            </div>
+            <div class="projects-grid" data-animate style="grid-template-columns: repeat(2, 1fr);">
+                <div class="project-card">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                        <img src="ChatGPT Image 12 feb 2026, 15_31_36.png" alt="CODEMETRIA"
+                            style="max-width: 60%; max-height: 60%; object-fit: contain;">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Web Corporativa</span>
+                                <span class="tag">HTML/CSS/JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CODEMETRIA</h3>
+                        <p>Nuestra propia web corporativa, diseñada para transmitir profesionalidad y modernidad.</p>
+                        <a href="proyectos.html" class="project-link">Ver proyecto <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #2d5016 0%, #4a7c28 100%); padding: 0;">
+                        <img src="Captura%20de%20pantalla%202026-02-12%20170215.png" alt="Repalsur"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="tag">Web Corporativa</span>
+                                <span class="tag">Multiidioma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Repalsur</h3>
+                        <p>Web corporativa para empresa de palets con más de 30 años de experiencia.</p>
+                        <a href="https://repalsur-88qg.vercel.app/" target="_blank" class="project-link">Ver proyecto <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta" data-animate>
+                <a href="proyectos.html" class="btn btn-outline">Ver todos los proyectos <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Cómo Trabajamos</span>
+                <h2 class="section-title">Un proceso <span class="gradient-text">claro y eficiente</span></h2>
+                <p class="section-description">Desde la idea inicial hasta el lanzamiento, te acompañamos en cada paso.
+                </p>
+            </div>
+            <div class="process-steps" data-animate>
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Descubrimiento</h3>
+                        <p>Analizamos tus necesidades, objetivos y público objetivo para definir la estrategia perfecta.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Diseño</h3>
+                        <p>Creamos wireframes y diseños visuales que reflejan tu marca y optimizan la experiencia de
+                            usuario.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Desarrollo</h3>
+                        <p>Transformamos el diseño en código limpio, optimizado y responsive con las mejores
+                            tecnologías.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Lanzamiento</h3>
+                        <p>Publicamos tu web, realizamos pruebas finales y te proporcionamos soporte continuo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-animate>
+                <h2>¿Listo para llevar tu negocio al <span class="gradient-text">siguiente nivel</span>?</h2>
+                <p>Cuéntanos tu proyecto y te haremos una propuesta personalizada sin compromiso.</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane"></i> Contactar Ahora
+                    </a>
+                    <a href="tel:+34671851592" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i> Llámanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="ChatGPT Image 12 feb 2026, 15_31_36.png" alt="CODEMETRIA" class="logo-img">
+                        <span class="logo-text">CODEMETRIA</span>
+                    </a>
+                    <p>Agencia de diseño y desarrollo web profesional. Transformamos ideas en experiencias digitales
+                        excepcionales.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/codemetria/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html">Diseño Web</a></li>
+                        <li><a href="servicios.html">Desarrollo Web</a></li>
+                        <li><a href="servicios.html">E-Commerce</a></li>
+                        <li><a href="servicios.html">Mantenimiento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info.codemetria@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +34 671 851 592</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Sevilla, España</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
