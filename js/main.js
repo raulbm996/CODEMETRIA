@@ -136,14 +136,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Typing Effect for Hero ----
     const typingElement = document.querySelector('.typing-text');
     if (typingElement) {
-        const words = JSON.parse(typingElement.dataset.words || '[]');
+        let words = JSON.parse(typingElement.dataset.words || '[]');
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
         let typingSpeed = 80;
 
+        function getActiveWords() {
+            const active = typingElement.dataset.activeWords;
+            if (active) {
+                return JSON.parse(active);
+            }
+            return JSON.parse(typingElement.dataset.words || '[]');
+        }
+
         function typeEffect() {
-            const currentWord = words[wordIndex];
+            const currentWords = getActiveWords();
+            if (currentWords.length === 0) { setTimeout(typeEffect, 500); return; }
+            if (wordIndex >= currentWords.length) wordIndex = 0;
+            const currentWord = currentWords[wordIndex];
 
             if (isDeleting) {
                 typingElement.textContent = currentWord.substring(0, charIndex - 1);
@@ -160,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
+                wordIndex = (wordIndex + 1) % currentWords.length;
                 typingSpeed = 300;
             }
 
