@@ -138,36 +138,40 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name" data-i18n="form_name">Nombre *</label>
-                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre"
+                                    data-i18n-placeholder="form_name_ph" required>
                             </div>
                             <div class="form-group">
                                 <label for="email" data-i18n="form_email">Email *</label>
-                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com"
+                                    data-i18n-placeholder="form_email_ph" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="phone" data-i18n="form_phone">Teléfono</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+34 671 851 592">
+                                <input type="tel" id="phone" name="phone" placeholder="+34 671 851 592"
+                                    data-i18n-placeholder="form_phone_ph">
                             </div>
                             <div class="form-group">
                                 <label for="service" data-i18n="form_service">Servicio</label>
                                 <select id="service" name="service">
-                                    <option value="">Selecciona un servicio</option>
-                                    <option value="diseno">Diseño Web</option>
-                                    <option value="desarrollo">Desarrollo Web</option>
-                                    <option value="responsive">Diseño Responsive</option>
-                                    <option value="ecommerce">E-Commerce</option>
-                                    <option value="mantenimiento">Mantenimiento</option>
-                                    <option value="seo">SEO & Posicionamiento</option>
-                                    <option value="otro">Otro</option>
+                                    <option value="" data-i18n="fopt_default">Selecciona un servicio</option>
+                                    <option value="diseno" data-i18n="fopt_diseno">Diseño Web</option>
+                                    <option value="desarrollo" data-i18n="fopt_desarrollo">Desarrollo Web</option>
+                                    <option value="responsive" data-i18n="fopt_responsive">Diseño Responsive</option>
+                                    <option value="ecommerce" data-i18n="fopt_ecommerce">E-Commerce</option>
+                                    <option value="mantenimiento" data-i18n="fopt_mantenimiento">Mantenimiento</option>
+                                    <option value="seo" data-i18n="fopt_seo">SEO & Posicionamiento</option>
+                                    <option value="otro" data-i18n="fopt_otro">Otro</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="message" data-i18n="form_message">Cuéntanos tu proyecto *</label>
                             <textarea id="message" name="message"
-                                placeholder="Describe tu proyecto, objetivos y necesidades..." required></textarea>
+                                placeholder="Describe tu proyecto, objetivos y necesidades..."
+                                data-i18n-placeholder="form_message_ph" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg btn-submit"
                             style="width: 100%; justify-content: center;">

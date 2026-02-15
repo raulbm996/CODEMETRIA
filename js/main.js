@@ -456,6 +456,18 @@ document.addEventListener('DOMContentLoaded', () => {
             form_service: 'Service',
             form_message: 'Tell us about your project *',
             form_submit: 'Send Message',
+            form_name_ph: 'Your name',
+            form_email_ph: 'you@email.com',
+            form_phone_ph: '+34 671 851 592',
+            form_message_ph: 'Describe your project, goals and needs...',
+            fopt_default: 'Select a service',
+            fopt_diseno: 'Web Design',
+            fopt_desarrollo: 'Web Development',
+            fopt_responsive: 'Responsive Design',
+            fopt_ecommerce: 'E-Commerce',
+            fopt_mantenimiento: 'Maintenance',
+            fopt_seo: 'SEO & Positioning',
+            fopt_otro: 'Other',
             faq_tag: 'FAQ',
             faq_title: 'Frequently Asked <span class="gradient-text">Questions</span>',
             faq1_q: 'How much does a website cost?',
@@ -632,6 +644,18 @@ document.addEventListener('DOMContentLoaded', () => {
             form_service: 'Servicio',
             form_message: 'Cuéntanos sobre tu proyecto *',
             form_submit: 'Enviar Mensaje',
+            form_name_ph: 'Tu nombre',
+            form_email_ph: 'tu@email.com',
+            form_phone_ph: '+34 671 851 592',
+            form_message_ph: 'Describe tu proyecto, objetivos y necesidades...',
+            fopt_default: 'Selecciona un servicio',
+            fopt_diseno: 'Diseño Web',
+            fopt_desarrollo: 'Desarrollo Web',
+            fopt_responsive: 'Diseño Responsive',
+            fopt_ecommerce: 'E-Commerce',
+            fopt_mantenimiento: 'Mantenimiento',
+            fopt_seo: 'SEO & Posicionamiento',
+            fopt_otro: 'Otro',
             faq_tag: 'FAQ',
             faq_title: 'Preguntas <span class="gradient-text">frecuentes</span>',
             faq1_q: '¿Cuánto cuesta una página web?',
@@ -657,6 +681,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.dataset.i18n;
             if (dict[key] !== undefined) {
                 el.innerHTML = dict[key];
+            }
+        });
+
+        // Update placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.dataset.i18nPlaceholder;
+            if (dict[key] !== undefined) {
+                el.placeholder = dict[key];
             }
         });
 
