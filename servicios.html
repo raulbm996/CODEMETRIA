@@ -27,17 +27,21 @@
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA Logo" class="logo-img">
+                    <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA Logo"
+                        class="logo-img">
                     <span class="logo-text">CODEMETRIA</span>
                 </a>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link active" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="proyectos.html" class="nav-link" data-i18n="nav_proyectos">Proyectos</a></li>
+                    <li><a href="nosotros.html" class="nav-link" data-i18n="nav_nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">Contacto</a></li>
                 </ul>
-                <a href="contacto.html" class="btn btn-primary nav-cta">Empezar Proyecto</a>
+                <a href="contacto.html" class="btn btn-primary nav-cta" data-i18n="nav_cta">Empezar Proyecto</a>
+                <button class="lang-toggle" id="langToggle" title="Switch to English">
+                    <i class="fas fa-globe"></i> <span>EN</span>
+                </button>
                 <button class="hamburger" id="hamburger" aria-label="Menú">
                     <span></span><span></span><span></span>
                 </button>
@@ -49,12 +53,13 @@
     <section class="page-hero">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Inicio</a>
+                <a href="index.html" data-i18n="nav_inicio">Inicio</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>Servicios</span>
+                <span data-i18n="nav_servicios">Servicios</span>
             </div>
-            <h1>Nuestros <span class="gradient-text">Servicios</span></h1>
-            <p>Soluciones integrales de diseño y desarrollo web para llevar tu negocio al mundo digital.</p>
+            <h1 data-i18n="srvp_title">Nuestros <span class="gradient-text">Servicios</span></h1>
+            <p data-i18n="srvp_subtitle">Soluciones integrales de diseño y desarrollo web para llevar tu negocio al
+                mundo digital.</p>
         </div>
     </section>
 
@@ -65,16 +70,23 @@
             <!-- Diseño Web -->
             <div class="service-detail" data-animate>
                 <div class="service-detail-content">
-                    <h3><i class="fas fa-palette" style="color: var(--primary-light); margin-right: 10px;"></i>Diseño
+                    <h3 data-i18n="srvd1_title"><i class="fas fa-palette"
+                            style="color: var(--primary-light); margin-right: 10px;"></i>Diseño
                         Web Profesional</h3>
-                    <p>Creamos diseños únicos y atractivos que reflejan la esencia de tu marca. Cada pixel está pensado
+                    <p data-i18n="srvd1_desc">Creamos diseños únicos y atractivos que reflejan la esencia de tu marca.
+                        Cada pixel está pensado
                         para ofrecer la mejor experiencia a tus usuarios y transmitir confianza y profesionalidad.</p>
                     <ul class="service-detail-features">
-                        <li><i class="fas fa-check-circle"></i> Diseño UI/UX personalizado</li>
-                        <li><i class="fas fa-check-circle"></i> Prototipos interactivos en Figma</li>
-                        <li><i class="fas fa-check-circle"></i> Paleta de colores y tipografía a medida</li>
-                        <li><i class="fas fa-check-circle"></i> Diseño centrado en la conversión</li>
-                        <li><i class="fas fa-check-circle"></i> Revisiones ilimitadas</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd1_f1">Diseño UI/UX
+                                personalizado</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd1_f2">Prototipos interactivos en
+                                Figma</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd1_f3">Paleta de colores y
+                                tipografía a medida</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd1_f4">Diseño centrado en la
+                                conversión</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd1_f5">Revisiones ilimitadas</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="service-detail-visual"
@@ -87,16 +99,23 @@
             <!-- Desarrollo Web -->
             <div class="service-detail reverse" data-animate>
                 <div class="service-detail-content">
-                    <h3><i class="fas fa-code" style="color: var(--primary-light); margin-right: 10px;"></i>Desarrollo
+                    <h3 data-i18n="srvd2_title"><i class="fas fa-code"
+                            style="color: var(--primary-light); margin-right: 10px;"></i>Desarrollo
                         Web a Medida</h3>
-                    <p>Transformamos diseños en sitios web funcionales utilizando las tecnologías más modernas. Código
+                    <p data-i18n="srvd2_desc">Transformamos diseños en sitios web funcionales utilizando las tecnologías
+                        más modernas. Código
                         limpio, rápido y escalable que garantiza un rendimiento excepcional.</p>
                     <ul class="service-detail-features">
-                        <li><i class="fas fa-check-circle"></i> HTML5, CSS3, JavaScript moderno</li>
-                        <li><i class="fas fa-check-circle"></i> Frameworks: React, Next.js, Vue</li>
-                        <li><i class="fas fa-check-circle"></i> Integración con CMS (WordPress, etc.)</li>
-                        <li><i class="fas fa-check-circle"></i> APIs y backend personalizado</li>
-                        <li><i class="fas fa-check-circle"></i> Código optimizado y documentado</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd2_f1">HTML5, CSS3, JavaScript
+                                moderno</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd2_f2">Frameworks: React, Next.js,
+                                Vue</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd2_f3">Integración con CMS
+                                (WordPress, etc.)</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd2_f4">APIs y backend
+                                personalizado</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd2_f5">Código optimizado y
+                                documentado</span></li>
                     </ul>
                 </div>
                 <div class="service-detail-visual"
@@ -109,16 +128,23 @@
             <!-- Responsive -->
             <div class="service-detail" data-animate>
                 <div class="service-detail-content">
-                    <h3><i class="fas fa-mobile-alt" style="color: var(--primary-light); margin-right: 10px;"></i>Diseño
+                    <h3 data-i18n="srvd3_title"><i class="fas fa-mobile-alt"
+                            style="color: var(--primary-light); margin-right: 10px;"></i>Diseño
                         Responsive</h3>
-                    <p>Tu sitio web se adaptará perfectamente a cualquier dispositivo. Más del 60% del tráfico web es
+                    <p data-i18n="srvd3_desc">Tu sitio web se adaptará perfectamente a cualquier dispositivo. Más del
+                        60% del tráfico web es
                         móvil, por eso garantizamos una experiencia impecable en todos los tamaños de pantalla.</p>
                     <ul class="service-detail-features">
-                        <li><i class="fas fa-check-circle"></i> Mobile-first approach</li>
-                        <li><i class="fas fa-check-circle"></i> Testing en múltiples dispositivos</li>
-                        <li><i class="fas fa-check-circle"></i> Optimización táctil</li>
-                        <li><i class="fas fa-check-circle"></i> Imágenes adaptativas</li>
-                        <li><i class="fas fa-check-circle"></i> Performance en conexiones lentas</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd3_f1">Mobile-first approach</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd3_f2">Testing en múltiples
+                                dispositivos</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd3_f3">Optimización táctil</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd3_f4">Imágenes adaptativas</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd3_f5">Performance en conexiones
+                                lentas</span></li>
                     </ul>
                 </div>
                 <div class="service-detail-visual"
@@ -131,17 +157,23 @@
             <!-- E-Commerce -->
             <div class="service-detail reverse" data-animate>
                 <div class="service-detail-content">
-                    <h3><i class="fas fa-shopping-cart"
+                    <h3 data-i18n="srvd4_title"><i class="fas fa-shopping-cart"
                             style="color: var(--primary-light); margin-right: 10px;"></i>Tiendas Online / E-Commerce
                     </h3>
-                    <p>Desarrollamos tiendas online completas y seguras que maximizan tus ventas. Desde el catálogo
+                    <p data-i18n="srvd4_desc">Desarrollamos tiendas online completas y seguras que maximizan tus ventas.
+                        Desde el catálogo
                         hasta el pago, cada paso está optimizado para convertir visitantes en clientes.</p>
                     <ul class="service-detail-features">
-                        <li><i class="fas fa-check-circle"></i> WooCommerce / Shopify / Custom</li>
-                        <li><i class="fas fa-check-circle"></i> Pasarelas de pago seguras</li>
-                        <li><i class="fas fa-check-circle"></i> Gestión de inventario</li>
-                        <li><i class="fas fa-check-circle"></i> Panel de administración intuitivo</li>
-                        <li><i class="fas fa-check-circle"></i> Marketing y analíticas integradas</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd4_f1">WooCommerce / Shopify /
+                                Custom</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd4_f2">Pasarelas de pago
+                                seguras</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd4_f3">Gestión de inventario</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd4_f4">Panel de administración
+                                intuitivo</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd4_f5">Marketing y analíticas
+                                integradas</span></li>
                     </ul>
                 </div>
                 <div class="service-detail-visual"
@@ -154,16 +186,22 @@
             <!-- Mantenimiento -->
             <div class="service-detail reverse" data-animate>
                 <div class="service-detail-content">
-                    <h3><i class="fas fa-tools"
+                    <h3 data-i18n="srvd5_title"><i class="fas fa-tools"
                             style="color: var(--primary-light); margin-right: 10px;"></i>Mantenimiento & Soporte</h3>
-                    <p>Tu sitio web necesita atención continua. Ofrecemos planes de mantenimiento para que siempre esté
+                    <p data-i18n="srvd5_desc">Tu sitio web necesita atención continua. Ofrecemos planes de mantenimiento
+                        para que siempre esté
                         actualizado, seguro y funcionando a pleno rendimiento.</p>
                     <ul class="service-detail-features">
-                        <li><i class="fas fa-check-circle"></i> Actualizaciones de seguridad</li>
-                        <li><i class="fas fa-check-circle"></i> Copias de seguridad automáticas</li>
-                        <li><i class="fas fa-check-circle"></i> Monitorización 24/7</li>
-                        <li><i class="fas fa-check-circle"></i> Soporte técnico prioritario</li>
-                        <li><i class="fas fa-check-circle"></i> Informes mensuales de rendimiento</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd5_f1">Actualizaciones de
+                                seguridad</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd5_f2">Copias de seguridad
+                                automáticas</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd5_f3">Monitorización 24/7</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd5_f4">Soporte técnico
+                                prioritario</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="srvd5_f5">Informes mensuales de
+                                rendimiento</span></li>
                     </ul>
                 </div>
                 <div class="service-detail-visual"
@@ -180,9 +218,11 @@
     <section class="section cta-section">
         <div class="container">
             <div class="cta-content" data-animate>
-                <h2>¿No encuentras lo que buscas?</h2>
-                <p>Cuéntanos tu proyecto y crearemos una solución totalmente personalizada para ti.</p>
-                <a href="contacto.html" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Contactar
+                <h2 data-i18n="srvp_cta_title">¿No encuentras lo que buscas?</h2>
+                <p data-i18n="srvp_cta_desc">Cuéntanos tu proyecto y crearemos una solución totalmente personalizada
+                    para ti.</p>
+                <a href="contacto.html" class="btn btn-primary btn-lg" data-i18n="srvp_cta_btn"><i
+                        class="fas fa-paper-plane"></i> Contactar
                     Ahora</a>
             </div>
         </div>
@@ -194,10 +234,12 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA" class="logo-img">
+                        <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA"
+                            class="logo-img">
                         <span class="logo-text">CODEMETRIA</span>
                     </a>
-                    <p>Agencia de diseño y desarrollo web profesional. Transformamos ideas en experiencias digitales
+                    <p data-i18n="footer_desc">Agencia de diseño y desarrollo web profesional. Transformamos ideas en
+                        experiencias digitales
                         excepcionales.</p>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/codemetria/" target="_blank" aria-label="Instagram"><i
@@ -205,35 +247,36 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Navegación</h4>
+                    <h4 data-i18n="footer_nav">Navegación</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                        <li><a href="proyectos.html" data-i18n="nav_proyectos">Proyectos</a></li>
+                        <li><a href="nosotros.html" data-i18n="nav_nosotros">Nosotros</a></li>
+                        <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Servicios</h4>
+                    <h4 data-i18n="footer_srv">Servicios</h4>
                     <ul>
-                        <li><a href="servicios.html">Diseño Web</a></li>
-                        <li><a href="servicios.html">Desarrollo Web</a></li>
-                        <li><a href="servicios.html">E-Commerce</a></li>
-                        <li><a href="servicios.html">Mantenimiento</a></li>
+                        <li><a href="servicios.html" data-i18n="srv1_title">Diseño Web</a></li>
+                        <li><a href="servicios.html" data-i18n="srv2_title">Desarrollo Web</a></li>
+                        <li><a href="servicios.html" data-i18n="srv4_title">E-Commerce</a></li>
+                        <li><a href="servicios.html" data-i18n="srv5_title">Mantenimiento</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer_contact">Contacto</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> info.codemetria@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +34 671 851 592</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Sevilla, España</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_location">Sevilla,
+                                España</span></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
+                <p data-i18n="footer_copy">&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

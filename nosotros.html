@@ -27,17 +27,21 @@
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA Logo" class="logo-img">
+                    <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA Logo"
+                        class="logo-img">
                     <span class="logo-text">CODEMETRIA</span>
                 </a>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                    <li><a href="nosotros.html" class="nav-link active">Nosotros</a></li>
-                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="proyectos.html" class="nav-link" data-i18n="nav_proyectos">Proyectos</a></li>
+                    <li><a href="nosotros.html" class="nav-link active" data-i18n="nav_nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">Contacto</a></li>
                 </ul>
-                <a href="contacto.html" class="btn btn-primary nav-cta">Empezar Proyecto</a>
+                <a href="contacto.html" class="btn btn-primary nav-cta" data-i18n="nav_cta">Empezar Proyecto</a>
+                <button class="lang-toggle" id="langToggle" title="Switch to English">
+                    <i class="fas fa-globe"></i> <span>EN</span>
+                </button>
                 <button class="hamburger" id="hamburger" aria-label="Menú">
                     <span></span><span></span><span></span>
                 </button>
@@ -49,12 +53,13 @@
     <section class="page-hero">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Inicio</a>
+                <a href="index.html" data-i18n="nav_inicio">Inicio</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>Nosotros</span>
+                <span data-i18n="nav_nosotros">Nosotros</span>
             </div>
-            <h1>Conoce <span class="gradient-text">CODEMETRIA</span></h1>
-            <p>Somos un equipo apasionado por el diseño y la tecnología, comprometidos con transformar tu visión digital
+            <h1 data-i18n="aboutp_title">Conoce <span class="gradient-text">CODEMETRIA</span></h1>
+            <p data-i18n="aboutp_subtitle">Somos un equipo apasionado por el diseño y la tecnología, comprometidos con
+                transformar tu visión digital
                 en realidad.</p>
         </div>
     </section>
@@ -64,14 +69,18 @@
         <div class="container">
             <div class="story-grid" data-animate="fade-left">
                 <div class="story-content">
-                    <span class="section-tag">Nuestra Historia</span>
-                    <h2>De la pasión por el código a <span class="gradient-text">crear experiencias</span></h2>
-                    <p>CODEMETRIA nació de la convicción de que cada negocio merece una presencia digital que realmente
+                    <span class="section-tag" data-i18n="about_story_tag">Nuestra Historia</span>
+                    <h2 data-i18n="about_story_title">De la pasión por el código a <span class="gradient-text">crear
+                            experiencias</span></h2>
+                    <p data-i18n="about_story_p1">CODEMETRIA nació de la convicción de que cada negocio merece una
+                        presencia digital que realmente
                         impacte. Fundada con la visión de combinar diseño excepcional con desarrollo técnico de primer
                         nivel.</p>
-                    <p>Desde nuestros inicios, hemos trabajado con empresas de todos los tamaños — desde startups que
+                    <p data-i18n="about_story_p2">Desde nuestros inicios, hemos trabajado con empresas de todos los
+                        tamaños — desde startups que
                         dan sus primeros pasos hasta marcas consolidadas que buscan reinventarse digitalmente.</p>
-                    <p>Nuestro enfoque va más allá de crear webs bonitas: diseñamos herramientas de negocio que generan
+                    <p data-i18n="about_story_p3">Nuestro enfoque va más allá de crear webs bonitas: diseñamos
+                        herramientas de negocio que generan
                         resultados medibles y contribuyen al crecimiento de nuestros clientes.</p>
                 </div>
                 <div class="story-image" style="display: flex; align-items: center; justify-content: center;">
@@ -86,43 +95,50 @@
     <section class="section" style="background: var(--bg-secondary);">
         <div class="container">
             <div class="section-header" data-animate>
-                <span class="section-tag">Valores</span>
-                <h2 class="section-title">Lo que nos <span class="gradient-text">define</span></h2>
-                <p class="section-description">Estos son los principios que guían cada proyecto y cada decisión en
+                <span class="section-tag" data-i18n="about_values_tag">Valores</span>
+                <h2 class="section-title" data-i18n="about_values_title">Lo que nos <span
+                        class="gradient-text">define</span></h2>
+                <p class="section-description" data-i18n="about_values_desc">Estos son los principios que guían cada
+                    proyecto y cada decisión en
                     CODEMETRIA.</p>
             </div>
             <div class="values-grid" data-stagger data-animate>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-gem"></i></div>
-                    <h3>Calidad Sin Compromiso</h3>
-                    <p>Cada línea de código y cada pixel están cuidados al detalle. No entregamos nada que no nos
+                    <h3 data-i18n="val1_title">Calidad Sin Compromiso</h3>
+                    <p data-i18n="val1_desc">Cada línea de código y cada pixel están cuidados al detalle. No entregamos
+                        nada que no nos
                         enorgullezca.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>Transparencia Total</h3>
-                    <p>Comunicación clara y honesta en cada fase del proyecto. Sin sorpresas, sin letras pequeñas.</p>
+                    <h3 data-i18n="val2_title">Transparencia Total</h3>
+                    <p data-i18n="val2_desc">Comunicación clara y honesta en cada fase del proyecto. Sin sorpresas, sin
+                        letras pequeñas.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h3>Innovación Constante</h3>
-                    <p>Siempre al día con las últimas tendencias y tecnologías para ofrecer soluciones de vanguardia.
+                    <h3 data-i18n="val3_title">Innovación Constante</h3>
+                    <p data-i18n="val3_desc">Siempre al día con las últimas tendencias y tecnologías para ofrecer
+                        soluciones de vanguardia.
                     </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-users"></i></div>
-                    <h3>Cliente en el Centro</h3>
-                    <p>Tu éxito es nuestro éxito. Escuchamos, entendemos y trabajamos para superar tus expectativas.</p>
+                    <h3 data-i18n="val4_title">Cliente en el Centro</h3>
+                    <p data-i18n="val4_desc">Tu éxito es nuestro éxito. Escuchamos, entendemos y trabajamos para superar
+                        tus expectativas.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Resultados Medibles</h3>
-                    <p>No solo creamos webs, generamos herramientas de negocio que producen resultados tangibles.</p>
+                    <h3 data-i18n="val5_title">Resultados Medibles</h3>
+                    <p data-i18n="val5_desc">No solo creamos webs, generamos herramientas de negocio que producen
+                        resultados tangibles.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-heart"></i></div>
-                    <h3>Pasión por el Diseño</h3>
-                    <p>Amamos lo que hacemos y eso se refleja en cada proyecto que entregamos.</p>
+                    <h3 data-i18n="val6_title">Pasión por el Diseño</h3>
+                    <p data-i18n="val6_desc">Amamos lo que hacemos y eso se refleja en cada proyecto que entregamos.</p>
                 </div>
             </div>
         </div>
@@ -132,9 +148,11 @@
     <section class="section" style="background: var(--bg-secondary);">
         <div class="container">
             <div class="section-header" data-animate>
-                <span class="section-tag">Tecnología</span>
-                <h2 class="section-title">Herramientas que <span class="gradient-text">usamos</span></h2>
-                <p class="section-description">Trabajamos con las tecnologías más modernas y fiables del mercado.</p>
+                <span class="section-tag" data-i18n="about_tech_tag">Tecnología</span>
+                <h2 class="section-title" data-i18n="about_tech_title">Herramientas que <span
+                        class="gradient-text">usamos</span></h2>
+                <p class="section-description" data-i18n="about_tech_desc">Trabajamos con las tecnologías más modernas y
+                    fiables del mercado.</p>
             </div>
             <div class="tech-grid" data-stagger data-animate>
                 <div class="tech-item">
@@ -193,25 +211,26 @@
     <section class="section">
         <div class="container">
             <div class="section-header" data-animate>
-                <span class="section-tag">Resultados</span>
-                <h2 class="section-title">Nuestros <span class="gradient-text">números hablan</span></h2>
+                <span class="section-tag" data-i18n="about_results_tag">Resultados</span>
+                <h2 class="section-title" data-i18n="about_results_title">Nuestros <span class="gradient-text">números
+                        hablan</span></h2>
             </div>
             <div class="hero-stats" style="justify-content: center; gap: 5rem;" data-stagger data-animate>
                 <div class="stat">
                     <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Proyectos Entregados</span>
+                    <span class="stat-label" data-i18n="about_stat1">Proyectos Entregados</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="40">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Clientes Satisfechos</span>
+                    <span class="stat-label" data-i18n="about_stat2">Clientes Satisfechos</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Años de Experiencia</span>
+                    <span class="stat-label" data-i18n="about_stat3">Años de Experiencia</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
-                    <span class="stat-label">Tasa de Satisfacción</span>
+                    <span class="stat-label" data-i18n="about_stat4">Tasa de Satisfacción</span>
                 </div>
             </div>
         </div>
@@ -221,9 +240,11 @@
     <section class="section cta-section">
         <div class="container">
             <div class="cta-content" data-animate>
-                <h2>¿Quieres trabajar <span class="gradient-text">con nosotros?</span></h2>
-                <p>Estamos listos para escuchar tu idea y convertirla en un proyecto digital exitoso.</p>
-                <a href="contacto.html" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Contactar</a>
+                <h2 data-i18n="aboutp_cta_title">¿Quieres trabajar <span class="gradient-text">con nosotros?</span></h2>
+                <p data-i18n="aboutp_cta_desc">Estamos listos para escuchar tu idea y convertirla en un proyecto digital
+                    exitoso.</p>
+                <a href="contacto.html" class="btn btn-primary btn-lg" data-i18n="aboutp_cta_btn"><i
+                        class="fas fa-paper-plane"></i> Contactar</a>
             </div>
         </div>
     </section>
@@ -234,10 +255,12 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA" class="logo-img">
+                        <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA"
+                            class="logo-img">
                         <span class="logo-text">CODEMETRIA</span>
                     </a>
-                    <p>Agencia de diseño y desarrollo web profesional. Transformamos ideas en experiencias digitales
+                    <p data-i18n="footer_desc">Agencia de diseño y desarrollo web profesional. Transformamos ideas en
+                        experiencias digitales
                         excepcionales.</p>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/codemetria/" target="_blank" aria-label="Instagram"><i
@@ -245,35 +268,36 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Navegación</h4>
+                    <h4 data-i18n="footer_nav">Navegación</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                        <li><a href="proyectos.html" data-i18n="nav_proyectos">Proyectos</a></li>
+                        <li><a href="nosotros.html" data-i18n="nav_nosotros">Nosotros</a></li>
+                        <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Servicios</h4>
+                    <h4 data-i18n="footer_srv">Servicios</h4>
                     <ul>
-                        <li><a href="servicios.html">Diseño Web</a></li>
-                        <li><a href="servicios.html">Desarrollo Web</a></li>
-                        <li><a href="servicios.html">E-Commerce</a></li>
-                        <li><a href="servicios.html">Mantenimiento</a></li>
+                        <li><a href="servicios.html" data-i18n="srv1_title">Diseño Web</a></li>
+                        <li><a href="servicios.html" data-i18n="srv2_title">Desarrollo Web</a></li>
+                        <li><a href="servicios.html" data-i18n="srv4_title">E-Commerce</a></li>
+                        <li><a href="servicios.html" data-i18n="srv5_title">Mantenimiento</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer_contact">Contacto</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> info.codemetria@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +34 671 851 592</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Sevilla, España</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_location">Sevilla,
+                                España</span></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
+                <p data-i18n="footer_copy">&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

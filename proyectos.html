@@ -27,17 +27,21 @@
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA Logo" class="logo-img">
+                    <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA Logo"
+                        class="logo-img">
                     <span class="logo-text">CODEMETRIA</span>
                 </a>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="proyectos.html" class="nav-link active">Proyectos</a></li>
-                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="proyectos.html" class="nav-link active" data-i18n="nav_proyectos">Proyectos</a></li>
+                    <li><a href="nosotros.html" class="nav-link" data-i18n="nav_nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">Contacto</a></li>
                 </ul>
-                <a href="contacto.html" class="btn btn-primary nav-cta">Empezar Proyecto</a>
+                <a href="contacto.html" class="btn btn-primary nav-cta" data-i18n="nav_cta">Empezar Proyecto</a>
+                <button class="lang-toggle" id="langToggle" title="Switch to English">
+                    <i class="fas fa-globe"></i> <span>EN</span>
+                </button>
                 <button class="hamburger" id="hamburger" aria-label="Menú">
                     <span></span><span></span><span></span>
                 </button>
@@ -49,12 +53,13 @@
     <section class="page-hero">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Inicio</a>
+                <a href="index.html" data-i18n="nav_inicio">Inicio</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>Proyectos</span>
+                <span data-i18n="nav_proyectos">Proyectos</span>
             </div>
-            <h1>Nuestros <span class="gradient-text">Proyectos</span></h1>
-            <p>Explora nuestra selección de trabajos y descubre cómo transformamos ideas en experiencias digitales.</p>
+            <h1 data-i18n="projp_title">Nuestros <span class="gradient-text">Proyectos</span></h1>
+            <p data-i18n="projp_subtitle">Explora nuestra selección de trabajos y descubre cómo transformamos ideas en
+                experiencias digitales.</p>
         </div>
     </section>
 
@@ -80,7 +85,8 @@
                     </div>
                     <div class="project-info">
                         <h3>CODEMETRIA</h3>
-                        <p>Nuestra propia web corporativa. Diseñada para transmitir profesionalidad, modernidad y
+                        <p data-i18n="projp_1_desc">Nuestra propia web corporativa. Diseñada para transmitir
+                            profesionalidad, modernidad y
                             confianza como agencia de diseño y desarrollo web.</p>
                     </div>
                 </div>
@@ -100,11 +106,12 @@
                     </div>
                     <div class="project-info">
                         <h3>Repalsur</h3>
-                        <p>Web corporativa para empresa sevillana dedicada a la compra-venta de palets usados,
+                        <p data-i18n="projp_2_desc">Web corporativa para empresa sevillana dedicada a la compra-venta de
+                            palets usados,
                             fabricación de palets nuevos y servicio integral de reparación. Con más de tres décadas de
                             experiencia.</p>
-                        <a href="https://repalsur-88qg.vercel.app/" target="_blank" class="project-link">Ver proyecto <i
-                                class="fas fa-arrow-right"></i></a>
+                        <a href="https://repalsur-88qg.vercel.app/" target="_blank" class="project-link"><span
+                                data-i18n="proj_link">Ver proyecto</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -116,9 +123,12 @@
     <section class="section cta-section">
         <div class="container">
             <div class="cta-content" data-animate>
-                <h2>¿Te gustaría ver tu proyecto <span class="gradient-text">aquí?</span></h2>
-                <p>Hablemos de cómo podemos transformar tu idea en una experiencia digital excepcional.</p>
-                <a href="contacto.html" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Empezar mi
+                <h2 data-i18n="projp_cta_title">¿Te gustaría ver tu proyecto <span class="gradient-text">aquí?</span>
+                </h2>
+                <p data-i18n="projp_cta_desc">Hablemos de cómo podemos transformar tu idea en una experiencia digital
+                    excepcional.</p>
+                <a href="contacto.html" class="btn btn-primary btn-lg" data-i18n="projp_cta_btn"><i
+                        class="fas fa-paper-plane"></i> Empezar mi
                     Proyecto</a>
             </div>
         </div>
@@ -130,10 +140,12 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA" class="logo-img">
+                        <img src="ChatGPT_Image_12_feb_2026__15_31_36-removebg-preview.png" alt="CODEMETRIA"
+                            class="logo-img">
                         <span class="logo-text">CODEMETRIA</span>
                     </a>
-                    <p>Agencia de diseño y desarrollo web profesional. Transformamos ideas en experiencias digitales
+                    <p data-i18n="footer_desc">Agencia de diseño y desarrollo web profesional. Transformamos ideas en
+                        experiencias digitales
                         excepcionales.</p>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/codemetria/" target="_blank" aria-label="Instagram"><i
@@ -141,35 +153,36 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Navegación</h4>
+                    <h4 data-i18n="footer_nav">Navegación</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                        <li><a href="proyectos.html" data-i18n="nav_proyectos">Proyectos</a></li>
+                        <li><a href="nosotros.html" data-i18n="nav_nosotros">Nosotros</a></li>
+                        <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Servicios</h4>
+                    <h4 data-i18n="footer_srv">Servicios</h4>
                     <ul>
-                        <li><a href="servicios.html">Diseño Web</a></li>
-                        <li><a href="servicios.html">Desarrollo Web</a></li>
-                        <li><a href="servicios.html">E-Commerce</a></li>
-                        <li><a href="servicios.html">Mantenimiento</a></li>
+                        <li><a href="servicios.html" data-i18n="srv1_title">Diseño Web</a></li>
+                        <li><a href="servicios.html" data-i18n="srv2_title">Desarrollo Web</a></li>
+                        <li><a href="servicios.html" data-i18n="srv4_title">E-Commerce</a></li>
+                        <li><a href="servicios.html" data-i18n="srv5_title">Mantenimiento</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer_contact">Contacto</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> info.codemetria@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +34 671 851 592</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Sevilla, España</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_location">Sevilla,
+                                España</span></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
+                <p data-i18n="footer_copy">&copy; 2026 CODEMETRIA. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
