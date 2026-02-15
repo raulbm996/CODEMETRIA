@@ -232,6 +232,15 @@
         gap: var(--space-2xl);
     }
 
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal {
+        justify-content: center;
+    }
+
     /* Contact */
     .contact-grid {
         grid-template-columns: 1fr;
